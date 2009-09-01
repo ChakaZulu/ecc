@@ -129,8 +129,8 @@ String TPropertyHandler::GetClassNamesValues(TComponent* comp, String prName)
 	try
 	{
 		PTypeInfo TypeInfo = (PTypeInfo)subComp->ClassInfo();
-		PPropList PropList = new TPropList;
-		GetPropInfos(TypeInfo, PropList);
+		PPropInfo* PropList = new TPropList;
+		GetPropInfos(TypeInfo, (PPropList)PropList);
 
 		tempList->Sorted = true;
 		for (int i=0; i < PropertyCount(subComp); i++)
@@ -304,8 +304,8 @@ String TPropertyHandler::GetAllNamesValues(TComponent* comp)
 		tempList->Sorted = true;
 
 		PTypeInfo TypeInfo = (PTypeInfo)comp->ClassInfo();
-		PPropList PropList = new TPropList;
-		GetPropInfos(TypeInfo, PropList);
+		PPropInfo* PropList = new TPropList;
+		GetPropInfos(TypeInfo, (PPropList)PropList);
 
 		String data;
 		for (int i=0; i < PropertyCount(comp); i++)
