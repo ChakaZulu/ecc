@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <PersonalityInfo>
-    <Option>
-      <Option Name="Personality">CPlusPlusBuilder.Personality</Option>
-      <Option Name="ProjectType">CppStaticLibrary</Option>
-      <Option Name="Version">1.0</Option>
-      <Option Name="GUID">{B23B5662-2FDE-4078-B3F1-586AFD0C8ACE}</Option>
-    </Option>
-  </PersonalityInfo>
-  <CPlusPlusBuilder.Personality>
-    <BCBPROJECT>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">CPlusPlusBuilder.Personality</Option>
+			<Option Name="ProjectType">CppStaticLibrary</Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{565A5949-50E7-4135-8651-8855357C02F4}</Option>
+		</Option>
+	</PersonalityInfo>
+	<CPlusPlusBuilder.Personality>
+		<BCBPROJECT>
       <project version="10.0">
         <property category="build.config" name="active" value="0"/>
         <property category="build.config" name="count" value="1"/>
@@ -33,6 +33,10 @@
         <property category="build.platform" name="win32.default" value="win32b"/>
         <property category="build.platform" name="win32.enabled" value="1"/>
         <property category="build.platform" name="win32.win32b.enabled" value="1"/>
+        <property category="win32.*.win32b.dcc32" name="param.filenames.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.listfile.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.objfile.merge" value="1"/>
+        <property category="win32.*.win32b.tasm32" name="param.xreffile.merge" value="1"/>
         <property category="win32.Debug_Build.win32b.bcc32" name="option.D.arg.1" value="_DEBUG"/>
         <property category="win32.Debug_Build.win32b.bcc32" name="option.D.arg.merge" value="1"/>
         <property category="win32.Debug_Build.win32b.bcc32" name="option.D.enabled" value="1"/>
@@ -93,8 +97,8 @@
           <property category="win32.*.win32b.bcc32" name="option.b.enabled" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.d.enabled" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.k.enabled" value="0"/>
-          <property category="win32.*.win32b.bcc32" name="option.n.arg.1" value="..\obj\"/>
-          <property category="win32.*.win32b.bcc32" name="option.n.arg.merge" value="1"/>
+          <property category="win32.*.win32b.bcc32" name="option.n.arg.1" value="obj\"/>
+          <property category="win32.*.win32b.bcc32" name="option.n.arg.merge" value="0"/>
           <property category="win32.*.win32b.bcc32" name="option.n.enabled" value="1"/>
           <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.1" value="NO_STRICT"/>
           <property category="win32.*.win32b.bcc32" name="option.sysdefines.arg.merge" value="1"/>
@@ -167,8 +171,8 @@
           <property category="win32.*.win32b.tasm32" name="param.objfile.merge" value="1"/>
           <property category="win32.*.win32b.tasm32" name="param.xreffile.merge" value="1"/>
           <property category="win32.*.win32b.tlib" name="option.0.enabled" value="1"/>
-          <property category="win32.*.win32b.tlib" name="option.outputdir.arg.1" value="..\"/>
-          <property category="win32.*.win32b.tlib" name="option.outputdir.arg.merge" value="1"/>
+          <property category="win32.*.win32b.tlib" name="option.outputdir.arg.1" value="bin\"/>
+          <property category="win32.*.win32b.tlib" name="option.outputdir.arg.merge" value="0"/>
           <property category="win32.*.win32b.tlib" name="option.outputdir.enabled" value="1"/>
         </optionset>
       </project>
@@ -283,9 +287,9 @@
         </Linker>
       </IDEOPTIONS>
     </BCBPROJECT>
-    <Source>
-      <Source Name="MainSource">ecc.bpf</Source>
-    </Source>
-    <buildevents/>
-  </CPlusPlusBuilder.Personality>
+		<Source>
+			<Source Name="MainSource">ecc.bpf</Source>
+		</Source>
+		<buildevents/>
+	</CPlusPlusBuilder.Personality>
 </BorlandProject>
